@@ -1,0 +1,59 @@
+name: flutter_backtome
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# Esto es para el Icon
+#dev_dependencies: 
+#  flutter_launcher_icons: ""
+
+version: 0.0.1+1
+
+environment:
+  sdk: '>=2.19.4 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  english_words: ^4.0.0
+  provider: ^6.0.0
+  # Dependencias de Firebase
+  firebase_core: ^2.15.1   # Firebase en general
+  cloud_firestore: ^4.15.6 # Servicio de la base de datos
+  firebase_auth: ^4.10.0  # Servicio de Autenticación
+  firebase_storage: ^11.6.0 # Servicio de almacenamiento
+  image_picker: ^1.0.7 #Selector de Imagenes
+  shared_preferences: ^2.1.2
+  carousel_slider: ^5.0.0
+  google_sign_in: ^5.2.1
+  animations: ^2.0.8
+  flutter_image_compress: ^2.3.0
+  path_provider: ^2.1.4
+  cached_network_image: ^3.3.1
+  photo_view: ^0.15.0
+  table_calendar: ^3.0.9
+  http: ^0.13.3
+  dio: ^5.4.0
+
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "./lib/resources/logo_v2.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+  - ./lib/resources/ITVer_Logo.png
+  - ./lib/resources/itver_logo_sf.png
+  - ./assets/mario.jpg
+  - ./assets/ipone.jpg
+  - assets/

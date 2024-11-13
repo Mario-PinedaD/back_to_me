@@ -1,0 +1,42 @@
+plugins {
+    id "com.android.application"
+    // Plugin de Google Services para Firebase
+    id 'com.google.gms.google-services'
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin" // Plugin de Flutter
+}
+
+android {
+    namespace = "com.example.flutter_backtome"
+    compileSdkVersion 34
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    defaultConfig {
+        applicationId "com.mario.backtome"
+        minSdkVersion 24
+        targetSdkVersion 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.debug // Configuración de firma para compilación de lanzamiento
+        }
+    }
+}
+
+flutter {
+    source "../.."
+}
+
+// Aplica el plugin de Google Services al final del archivo
+apply plugin: 'com.google.gms.google-services'
